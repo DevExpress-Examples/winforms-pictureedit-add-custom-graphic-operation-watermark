@@ -15,15 +15,15 @@ The operation must be a BaseCachedGraphicOperation descendant. Users can undo an
 2. You can allow users to customize the operation's settings in custom controls before the operation is applied. 
 Create a panel with controls and implement the IToolSettingsControl interface for the panel. The IToolSettingsControl.GetOperation method must return the customized graphic operation (WatermarkGraphicOperation).<br>
 
-This example creates a user control (WatermarkToolControl) with controls to enter the watermark-aware settings:
+   This example creates a user control (WatermarkToolControl) with controls to enter the watermark-aware settings:
    - a TextEditor to enter the watermark text
    - a ColorEditor to specify the font color
    - a SpinEditor to enter the font size
    - a CheckEditor to allow the watermark text to be repeated throughout the image.
 
-3. Handle the PictureEdit.ImageEditorDialogShowing event to add custom commands (buttons) to the editor's main toolbar.<br>
+3. Handle the PictureEdit.ImageEditorDialogShowing event to add custom commands (buttons) to the editor's main toolbar.
 
-In the example two commands are added:
+   In the example two commands are added:
    - WatermarkPreset - Invokes the WatermarkGraphicOperation with predefined settings.
    - WatermarkCommand - Displays the WatermarkToolControl in which users can specify custom watermark settings and then apply the WatermarkGraphicOperation.
 
