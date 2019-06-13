@@ -16,6 +16,7 @@ The operation must be a BaseCachedGraphicOperation descendant. Users can undo an
 The panel must implement the IToolSettingsControl interface. The IToolSettingsControl.GetOperation method must return the customized graphic operation (WatermarkGraphicOperation).<br>
 
 This example creates a user control (WatermarkToolControl) with controls to enter the watermark-aware settings:
+
     - a TextEditor to enter the watermark text
     - a ColorEditor to specify the font color
     - a SpinEditor to enter the font size
