@@ -10,7 +10,7 @@ This example shows how to extend the editor with custom graphic commands that ad
 The steps to add a WatermarkCommand (and other commands) to the image editor are as follows.
 
 1. Create a new class (WatermarkGraphicOperation) that performs an operation on an image. 
-The operation must be a BaseCachedGraphicOperation descendant.
+The operation must be a BaseCachedGraphicOperation descendant. Users can undo and redo BaseCachedGraphicOperations while the image editor is active.
 
 2. You can allow users to customize the operation's settings in a custom panel with controls before the operation is applied. 
 The panel must implement the IToolSettingsControl interface. The IToolSettingsControl.GetOperation method must return the customized graphic operation (WatermarkGraphicOperation).<br>
