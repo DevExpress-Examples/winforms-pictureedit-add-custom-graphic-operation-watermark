@@ -7,6 +7,8 @@ The PictureEdit control provides a built-in editor that allows users to perform 
 
 This example shows how to extend the editor with custom graphic commands that add watermarks to the current image.
 
+![image](pictureedit-editor-watermark.png)
+
 The steps to add a WatermarkCommand (and other commands) to the image editor are as follows.
 
 1. Create a new class (WatermarkGraphicOperation) that performs an operation on an image. 
