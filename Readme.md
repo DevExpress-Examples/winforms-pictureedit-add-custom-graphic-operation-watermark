@@ -1,3 +1,4 @@
+# How to add custom graphic operations (watermarks) to the built-in editor dialog for a PictureEdit control
 
 The PictureEdit control provides a built-in editor that allows users to perform basic graphic operations on the displayed image.
   - Crop and straighten
