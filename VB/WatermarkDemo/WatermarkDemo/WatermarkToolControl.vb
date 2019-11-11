@@ -15,9 +15,9 @@ Namespace WatermarkDemo
 		Inherits XtraUserControl
 		Implements IToolSettingsControl
 
-		Public Event Changed As EventHandler
+        Public Event Changed As EventHandler Implements IToolSettingsControl.Changed
 
-		Public Sub New()
+        Public Sub New()
 			InitializeComponent()
 
 			AddHandler teText.TextChanged, Sub(s, e) RaiseChanged()
@@ -32,13 +32,13 @@ Namespace WatermarkDemo
 			seFontSize.Value = 30
 			ceRepeat.Checked = True
 		End Sub
-		Private Sub RaiseChanged()
-			RaiseEvent Changed(Me, EventArgs.Empty)
-		End Sub
-		Public Function GetOperation() As BaseGraphicOperation
-			Return New WatermarkGraphicOperation(teText.Text, cpeColor.Color, CInt(Math.Truncate(seFontSize.Value)), ceRepeat.Checked)
-		End Function
-	End Class
+        Private Sub RaiseChanged()
+            RaiseEvent Changed(Me, EventArgs.Empty)
+        End Sub
+        Public Function GetOperation() As BaseGraphicOperation Implements IToolSettingsControl.GetOperation
+            Return New WatermarkGraphicOperation(teText.Text, cpeColor.Color, CInt(Math.Truncate(seFontSize.Value)), ceRepeat.Checked)
+        End Function
+    End Class
 
 	Public Class WatermarkGraphicOperation
 		Inherits BaseCachedGraphicOperation
