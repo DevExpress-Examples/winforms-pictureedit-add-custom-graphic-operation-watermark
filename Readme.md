@@ -24,7 +24,7 @@ Create a panel with controls and implement the IToolSettingsControl interface fo
    - a SpinEditor to enter the font size
    - a CheckEditor to allow the watermark text to be repeated throughout the image.
 
-3. Handle the PictureEdit.ImageEditorDialogShowing event to add custom commands (buttons) to the editor's main toolbar.
+3. Handle the <a href="https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit.ImageEditorDialogShowing">PictureEdit.ImageEditorDialogShowing event</a> to add custom commands (buttons) to the editor's main toolbar.
 
    In the example two commands are added:
    - WatermarkPreset - Invokes the WatermarkGraphicOperation with predefined settings.
