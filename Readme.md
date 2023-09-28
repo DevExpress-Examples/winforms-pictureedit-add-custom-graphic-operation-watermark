@@ -8,11 +8,11 @@
 The WinForms PictureEdit control integrates an image editor that allows users to perform common graphic operations:
 
 * Crop and straighten
-* Adjust brightness, contrast and saturation
+* Adjust brightness, contrast, and saturation
 * Mirror
 * Rotate, etc.
 
-This example shows how to extend the image editor. The example adds a custom commands that allows you to watermark the image:
+This example shows how to extend the image editor. The example adds custom commands that allow you to watermark the image:
 
 ![WinForms PictureEdit - Watermark Images](pictureedit-editor-watermark.png)
 
